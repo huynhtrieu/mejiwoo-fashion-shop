@@ -1,0 +1,716 @@
+.bl_header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bl_header_menu{
+    float: left;
+    display: flex;
+    width: 380px;
+    text-align: center;
+    justify-content: space-between;
+    padding: 42px 0 0 0;
+    font-size: 14px;
+}
+
+.bl_header_menu li:hover{
+    border-bottom: 2px solid currentColor;
+}
+
+.bl_header_menu li:first-child a {
+    border-bottom: 2px solid currentColor;
+}
+
+.bl_header_menu li{
+    display: block;
+    float: left;
+    cursor: pointer
+}
+
+
+
+.bl_header_logo{
+    float: left;
+    display: block;
+    text-align: center;
+    margin: 35px 192px 31px 192px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+.bl_header_logo p{
+    font-size: 14px;
+}
+
+.bl_header_icon{
+    display: flex;
+    gap: 26px;
+    float: right;
+    padding-top: 33px;
+}
+
+.bl_header_iconSearch{
+    position: relative;
+    width: 155px;
+}
+
+.bl_header_iconSearch input{
+    border: 0px solid #ccc;
+    border-radius: 10px;
+    background: rgba(217, 217, 217, 0.35);
+    height: 35px;
+    transition: border-color 0.3s ease;
+    width: 100%;
+}
+
+.bl_header_iconSearch input:focus {
+    outline: none;
+    border: none;
+}
+
+.bl_header_iconSearch svg {
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+.bl_header_iconCart{
+    padding-top: 8px;
+    cursor: pointer;
+}
+.bl_header_iconAcc{
+    padding-top: 8px;
+    cursor: pointer;
+}
+
+
+
+.bl_background{
+    background-size: cover;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    position: relative;
+    text-align: center;
+    color: white;
+    width: 100%;
+    max-width: 1440px;
+    display: block;
+    margin: 0 auto;
+}
+
+#bl_background2{
+    margin-top: 60px;
+}
+
+.bl_background_index{
+    position: relative;
+}
+
+.bl_background_index img{
+    width: 100%;
+}
+
+.bl_background_caption{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 282px;
+}
+
+.bl_background_caption h1{
+    padding-bottom: 12px;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.bl_background_caption h2{
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.bl_background_caption p{
+    text-align: center;
+    margin: 0;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.bl_background_caption button{
+    border-radius: 20px;
+    background: #FFF;
+    border: 0px;
+    display: inline-flex;
+    padding: 12px 30px;
+    margin-top: 29px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    cursor: pointer;
+}
+
+.bl_background_caption button:hover{
+    background: rgba(217, 217, 217, 0.35);
+}
+
+.bl_season{
+    width: 100%;
+    display: inline-block;
+}
+
+.bl_season h1{
+    text-align: center;
+    font-size: 48px;
+    font-weight: 600;
+    padding: 60px 0;
+}
+
+.bl_season_frame{
+    display: flex;
+    justify-content: space-between;
+    /* margin-bottom: 24px; */
+    text-align: center;
+}
+
+.bl_season_frame h2{
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding-top: 26px;
+}
+
+.bl_season_frame button{
+    margin-top: 36px;
+    padding: 12px 30px;
+    gap: 10px;
+
+    border: 0px;
+    border-radius: 20px;
+    background: #F7F6F0;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    cursor: pointer;
+}
+
+.bl_season_frame button:hover{
+    background: rgba(217, 217, 217, 0.35);
+}
+
+
+.slick-prev, .slick-next {
+    z-index: 1; /* Đảm bảo mũi tên hiển thị trên các slide */
+    width: 30px;
+    height: 30px;
+    background: rgba(0, 0, 0, 0.5); /* Background màu xám nhạt */
+    color: #fff;
+    border-radius: 50%; /* Làm cho mũi tên tròn */
+}
+
+.slick-prev {
+    left: 10px; /* Vị trí từ cạnh trái */
+}
+
+.slick-next {
+    right: 10px; /* Vị trí từ cạnh phải */
+    
+}
+
+
+
+
+
+
+
+
+
+.slick-slide {
+    /* margin: 0 10px; */
+}
+
+.bl_slide_title{
+    padding: 60px 0;
+    margin-bottom: 0;
+}
+.bl_slide_bestsl{
+    border: 0px;
+    display: flex;
+    justify-content: space-between;
+    text-align:center;
+}
+.bl_slide_bestsl img{
+    width: 397px;
+    height:496px;
+    border-radius:10px;
+    
+}
+
+.bl_slide_bestsl h3{
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 14px 0 4px 0;
+}
+.bl_slide_bestsl h4{
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 1px;
+    
+}
+
+.slider-review div{
+    display: flex;
+    gap: 23px;
+}
+
+.bl_slide_trending {
+    width: 399px;
+    height:603px;
+    background:#F7F6F0;
+    border-radius:10px;
+    text-align:center;
+    display: inline-block; 
+    padding-top: 28px;
+}
+
+.bl_slide_trending img{
+    display: block;
+    margin: 0 auto;
+    /* padding: 0 20px; */
+    width: 329px;
+    height: 410px;
+    
+}
+
+
+.bl_slide_trending h3{
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 24px 0 6px;
+}
+
+.bl_slide_trending ul{
+    margin-bottom: 1px;
+}
+.bl_slide_trending li{
+    display: inline;
+    padding: 2px;
+}
+
+.bl_slide_trending h4{
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    overflow: hidden;
+    display: -webkit-box;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    padding: 3px 30px;
+}
+
+
+.bl_outProducts h1{
+    margin: 60px 0 40px 0;
+}
+
+.bl_outProducts_menu{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.bl_outProducts_menu li{
+    padding: 20px 40px;
+    font-size: 32px;
+    font-weight: 500;
+}
+
+.bl_outProducts_menu li:hover{
+    background-color: #F7F6F0;
+}
+
+.bl_outProducts_menu li:hover{
+    background-color: #F7F6F0;
+    text-decoration: underline;
+}
+
+#bl_outProducts_btnMenu{
+    border: 0px;
+    background-color: #F7F6F0;
+}
+
+.bl_outProducts_frame{
+    background-color: #F7F6F0;
+    width: 1240px;
+    padding: 45px 38px 40px 38px;
+}
+
+.bl_outProducts_frame ul{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.bl_outProducts_frame h3{
+    padding: 19px 0 4px;
+}
+
+.bl_outProducts_btn{
+    display: flex;
+    justify-content: center;
+    margin-top: 32px;
+}
+
+.bl_outProducts_btn svg{
+    padding-left: 10px;
+}
+
+.bl_outProducts_btn button{
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: flex;
+    border-radius: 20px;
+    background: #FFF;
+    border: 0px;
+    padding: 12px 30px;
+}
+
+.bl_outProducts_btn button:hover{
+    background: rgba(217, 217, 217, 0.35);
+}
+
+.vertical-line{
+    display: flex;
+    justify-content: center;
+}
+
+.vertical-line hr{
+    border: 1px solid black;
+}
+
+
+.bl_joinMejiwoo{
+    background-color: #F7F6F0;
+    margin-top: 44px;
+    display: inline-block;
+    width: 100%;
+    max-width: 1440px;
+    /* margin: 0 auto; */
+}
+
+.bl_joinMejiwoo p{
+    font-size: 13px;
+}
+
+.bl_joinMejiwoo_benefits{
+    display: block;
+    float: left;
+    width: 522px;
+    margin-top: 162px;
+}
+
+.bl_joinMejiwoo_benefits h1{
+    font-size: 48px;
+    margin-bottom: 40px;
+}
+
+.bl_joinMejiwoo_benefits li{
+    display: flex;
+    font-size: 24px;
+    font-weight: 600;
+    padding: 20px;
+}
+
+.bl_joinMejiwoo_benefits svg{
+    padding-right: 6px;
+}
+
+.bl_joinMejiwoo_signUp{
+    float: right;
+    align-items: flex-end;
+    width: 463px;
+    padding-right: 86px;
+    margin-top: 158px;
+}
+
+.bl_signUp_btn{
+    display: flex;
+}
+
+.bl_signUp_input input{
+    display: flex;
+    border-radius: 4px;
+    background: #FFF;
+    width: 463px;
+    height: 31px;
+}
+
+
+.bl_signUp_inputInfo{
+    position: relative;
+    width: 463px;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.bl_signUp_inputInfo input{
+    border: 0px solid #ccc;
+    border-radius: 10px;
+    background: #FFF;
+    height: 35px;
+    transition: border-color 0.3s ease;
+    width: 100%;
+}
+
+.bl_signUp_inputInfo input:focus {
+    outline: none;
+    border: none;
+}
+
+.signUp_check{
+    display: flex;
+    margin-top: 30px;
+    
+}
+
+.signUp_check h3{
+    display: flex;
+    font-size: 16px;
+    font-weight: 400;
+    padding-top: 4px;
+}
+
+.signUp_check h3 strong {
+    color: #333;
+    font-weight: bold;
+}
+
+.signUp_check input[type="checkbox"] {
+    border: none;
+    outline: none;
+    margin-right: 10px;
+}
+ 
+.signUp_check input[type="checkbox"]{
+    width: 26px;
+    height: 26px;
+}
+
+.bl_signUp_inputInfo input::placeholder {
+    color: #000;
+    font-size: 16px;
+    text-align: center;
+}
+
+.bl_signUp_input h3{
+    font-size: 16px;
+}
+.bl_signUp_input button{
+    display: flex;
+}
+
+.bl_signUp_btn{
+    display: flex;
+    justify-content: center;
+    margin-top: 23px;
+}
+
+.bl_signUp_btn h3{
+    padding-top: 3px;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.bl_signUp_btn button{
+    font-size: 20px;
+    border-radius: 20px;
+    background: #FFF;
+    border: 0px;
+    padding: 12px 30px;
+    cursor: pointer;
+}
+
+.bl_signUp_btn button:hover{
+    background: rgba(217, 217, 217, 0.35);
+}
+
+.bl_signUp_btn svg{
+    padding-right: 10px;
+}
+
+
+
+.signUp_line_container {
+    display: flex;
+    align-items: center;
+    margin-top: 23px;
+}
+
+.signUp_line {
+    flex-grow: 1;  
+    height: 1px;  
+    background-color: #000;
+}
+
+.signUp_line_container h3 {
+
+    margin: 0px 11px;
+}
+
+.signUp_line_stand{
+    width: 1px;
+    height: 645px;
+    float: left;
+    background-color: black;
+    margin-left: 100px;
+    margin-top: 76px ;
+    margin-bottom: 76px;
+}
+
+
+
+.bl_footer {
+    display: inline-block;
+    flex-wrap: wrap; 
+}
+
+.footer_logo, .footer_aboutUS, .footer_helps, .footer_follow {
+    float: left;
+}
+
+.footer_logo{
+    margin: 102px 112px 0 0;
+}
+
+.footer_logo h2{
+    font-size: 32px;
+    font-weight: 500;
+}
+.footer_logo h3{
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.footer_aboutUS{
+    margin: 48px 77px 0 0;
+}
+
+.footer_helps{
+    margin: 48px 87px 0 0;
+}
+
+.footer_follow{
+    margin-top: 48px;
+}
+
+.footer_title{
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 11px;
+}
+
+.footer_list h3{
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.footer_aboutUS ul, .footer_helps ul{
+    display: flex;
+    flex-direction: column; 
+    gap: 10px;
+}
+
+.footer_follow ul{
+    display: flex;
+    gap: 6px;
+}
+
+.footer_follow li{
+    background-color: rgba(217, 217, 217, 0.35);
+    display: flex;        
+    justify-content: center; 
+    align-items: center; 
+    width: 36px;        
+    height: 36px;       
+    border-radius: 50%; 
+}
+
+.footer_follow li:hover{
+    background-color: #F7F6F0;
+}
+
+.footer_follow svg{
+    margin: 10px;
+    cursor: pointer;
+}
+
+.footer_list_policy{
+    display: block;
+    width: 100%;
+}
+
+.footer_list_policy ul{
+    justify-content: right;
+    margin: 17px 16px 12px;
+    display: flex;      
+    gap: 20px;  
+}
+
+.footer_list_policy h3{
+    font-size: 16px;
+    font-weight: 600;
+    
+}
+
+.footer_license{
+    display: flex;
+    width: 100%;
+    height: 49px;
+    background-color: black;
+    color: #FFF;
+    display: block;
+}
+
+.footer_license h3{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 13px;
+}
+
+
